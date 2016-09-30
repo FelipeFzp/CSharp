@@ -1,9 +1,0 @@
-c:\users\promob\documents\visual studio 2015\Projects\CollectionsExamples\CollectionsExamples\bin\Debug\CollectionsExamples.exe.config
-C:\Users\promob\Documents\Visual Studio 2015\Projects\CollectionsExamples\CollectionsExamples\bin\Debug\CollectionsExamples.exe
-C:\Users\promob\Documents\Visual Studio 2015\Projects\CollectionsExamples\CollectionsExamples\bin\Debug\CollectionsExamples.pdb
-C:\Users\promob\Documents\Visual Studio 2015\Projects\CollectionsExamples\CollectionsExamples\obj\Debug\CollectionsExamples.csprojResolveAssemblyReference.cache
-C:\Users\promob\Documents\Visual Studio 2015\Projects\CollectionsExamples\CollectionsExamples\obj\Debug\CollectionsExamples.exe
-C:\Users\promob\Documents\Visual Studio 2015\Projects\CollectionsExamples\CollectionsExamples\obj\Debug\CollectionsExamples.pdb
-E:\Felipe\CollectionsExamples\CollectionsExamples\bin\Debug\CollectionsExamples.exe.config
-E:\Felipe\CollectionsExamples\CollectionsExamples\obj\Debug\CollectionsExamples.exe
-E:\Felipe\CollectionsExamples\CollectionsExamples\obj\Debug\CollectionsExamples.pdb
