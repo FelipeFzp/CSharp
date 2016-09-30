@@ -1,0 +1,9 @@
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\bin\Release\IMC.exe.config
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\bin\Release\IMC.exe
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\bin\Release\IMC.pdb
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.Form1.resources
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.Properties.Resources.resources
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.csproj.GenerateResource.Cache
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.exe
+C:\Users\felip\Documents\Visual Studio 2015\Projects\IMC\IMC\obj\Release\IMC.pdb
