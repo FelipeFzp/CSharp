@@ -1,0 +1,9 @@
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\bin\Debug\SistemaBancario.exe.config
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\obj\Debug\SistemaBancario.csprojResolveAssemblyReference.cache
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\bin\Debug\SistemaBancario.exe
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\bin\Debug\SistemaBancario.pdb
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\obj\Debug\SistemaBancario.exe
+c:\users\promob\documents\visual studio 2015\Projects\SistemaBancario\SistemaBancario\obj\Debug\SistemaBancario.pdb
+C:\Users\felip\Desktop\SistemaBancario\SistemaBancario\bin\Debug\SistemaBancario.exe.config
+C:\Users\felip\Desktop\SistemaBancario\SistemaBancario\obj\Debug\SistemaBancario.exe
+C:\Users\felip\Desktop\SistemaBancario\SistemaBancario\obj\Debug\SistemaBancario.pdb
