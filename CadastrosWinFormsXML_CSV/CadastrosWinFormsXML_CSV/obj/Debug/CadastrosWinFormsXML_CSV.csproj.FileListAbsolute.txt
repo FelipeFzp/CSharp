@@ -16,3 +16,12 @@ C:\Users\felip\Desktop\Felipe\Café e suas Variaveis\GitHub\CSharp\CadastrosWinF
 C:\Users\felip\Desktop\Felipe\Café e suas Variaveis\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CasatroFuncionarios.Form1.resources
 C:\Users\felip\Desktop\Felipe\Café e suas Variaveis\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.Properties.Resources.resources
 C:\Users\felip\Desktop\Felipe\Café e suas Variaveis\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.csproj.GenerateResource.Cache
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\bin\Debug\CadastrosWinFormsXML_CSV.exe.config
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.exe
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.pdb
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\bin\Debug\CadastrosWinFormsXML_CSV.exe
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\bin\Debug\CadastrosWinFormsXML_CSV.pdb
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CasatroFuncionarios.Form1.resources
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.Properties.Resources.resources
+C:\Users\felip\Documents\GitHub\CSharp\CadastrosWinFormsXML_CSV\CadastrosWinFormsXML_CSV\obj\Debug\CadastrosWinFormsXML_CSV.csproj.GenerateResource.Cache

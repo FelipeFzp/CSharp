@@ -11,6 +11,7 @@ namespace CasatroFuncionarios
 {
     public static class Utilidades
     {
+        #region Adicionar Objetos
         public static void adicionarFuncionario(string nome, int idade, string cpf, double salario)
         {
             Form1 form1 = new Form1();
@@ -26,7 +27,9 @@ namespace CasatroFuncionarios
             Pessoas.ListaPessoas.Add(pessoa.ToString());
             Pessoas.ListaPessoasCSV.Add(pessoa.ToCSV());
         }
+        #endregion
 
+        #region Salvar Arquivos
         public static void SalvarArquivos()
         {
             Form1 form1 = new Form1();
@@ -36,8 +39,8 @@ namespace CasatroFuncionarios
             var ResultadoDeJanela=form1.saveFileDialog1.ShowDialog();
             var local = form1.saveFileDialog1.FileName; // retorna o local em que o arquivo foi salvo
             string extensaoArquivoSalvo=Path.GetExtension(local); // pega a extensão do caminho passado nos parametros
-            //if ("OK".Equals(ResultadoDeJanela))
-            //{
+            if (ResultadoDeJanela.Equals(DialogResult.OK))
+            {
                 switch (extensaoArquivoSalvo)
                 {
                     case ".xml":
@@ -50,35 +53,7 @@ namespace CasatroFuncionarios
                         MessageBox.Show("Formato de Arquivo Invalido !");
                         break;
                 }
-            //}      
-        }
-
-        public static List<string> FiltrarListView(string parametroFiltro)
-            {
-            List<string> ListaFiltrada = new List<string>();
-            List<Pessoas> ListaPessoasObjeto = new List<Pessoas>();
-            string[] VetorInformacoes;
-            foreach(var linha in Pessoas.ListaPessoasCSV)
-            {
-                VetorInformacoes = linha.Split(';');
-                if (VetorInformacoes[3].Equals("Desempregado"))
-                {
-                    ListaPessoasObjeto.Add(new Pessoas(VetorInformacoes[0], int.Parse(VetorInformacoes[1]), VetorInformacoes[2]));
-                }
-                else if (!VetorInformacoes[3].Equals("Desempregado"))
-                {
-                    ListaPessoasObjeto.Add(new Funcionario(VetorInformacoes[0], int.Parse(VetorInformacoes[1]), VetorInformacoes[2], double.Parse(VetorInformacoes[3])));
-                }
-            }
-            // filtrar listview ----------- ver
-            var retorno = ListaPessoasObjeto.Where(p => p.Nome.ToString().Contains(parametroFiltro)
-                                                     || p.Idade.ToString().Contains(parametroFiltro)
-                                                     || p.Cpf.ToString().Contains(parametroFiltro));
-            foreach(var linha in retorno)
-            {
-                ListaFiltrada.Add(linha.ToString());
-            }
-            return ListaFiltrada;
+            }      
         }
 
         public static void SalvarListaPessoasCSV(string local)
@@ -141,7 +116,9 @@ namespace CasatroFuncionarios
                 }
             }
         }
+        #endregion
 
+        #region Carregar Arquivos
         public static void CarregarArquivos()
         {
             Form1 form1 = new Form1();
@@ -150,16 +127,20 @@ namespace CasatroFuncionarios
             var ResultadoDaJanela = form1.openFileDialog1.ShowDialog();
             var local=form1.openFileDialog1.FileName;
             var extensaoArquivoAberto = Path.GetExtension(local);
-            switch (extensaoArquivoAberto)
+            if (ResultadoDaJanela.Equals(DialogResult.OK))
             {
-                case ".xml":
-                    break;
-                case ".csv":
-                    CarregarArquivoCSV(local);
-                    break;
-                default:
-                    throw new FormatoDeArquivoInvalidoException();
-            }
+                switch (extensaoArquivoAberto)
+                {
+                    case ".xml":
+                        CarregarArquivoXML(local);
+                        break;
+                    case ".csv":
+                        CarregarArquivoCSV(local);
+                        break;
+                    default:
+                        throw new FormatoDeArquivoInvalidoException();
+                }
+            }  
         }
 
         public static void CarregarArquivoCSV(string local)
@@ -182,9 +163,73 @@ namespace CasatroFuncionarios
             }
         }
 
-        public static void CarregarArquivoXML(string local) //Desenvolver
+        public static void CarregarArquivoXML(string local)
         {
+            XmlDocument doc = new XmlDocument();
+            string nome = string.Empty;
+            string idade = string.Empty;
+            string cpf = string.Empty;
+            string salario = string.Empty;
+            Pessoas.ListaPessoas.Clear();
+            Pessoas.ListaPessoasCSV.Clear();
+            doc.Load(local);
 
+            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            {
+                foreach(XmlAttribute atributo in node.Attributes)
+                {
+                    switch (atributo.Name)
+                    {
+                        case "NOME":
+                            nome = atributo.Value;
+                            break;
+                        case "IDADE":
+                            idade = atributo.Value;
+                            break;
+                        case "CPF":
+                            cpf = atributo.Value;
+                            break;
+                        case "SALARIO":
+                            salario = atributo.Value;
+                            break;
+                    }
+                }
+                if (salario != string.Empty)
+                    adicionarFuncionario(nome, int.Parse(idade), cpf, double.Parse(salario));
+                else if (salario == string.Empty)
+                    adicionarPessoa(nome, int.Parse(idade), cpf);
+            }   
         }
+        #endregion
+
+        #region Filtrar ListView
+        public static List<string> FiltrarListView(string parametroFiltro)
+        {
+            List<string> ListaFiltrada = new List<string>();
+            List<Pessoas> ListaPessoasObjeto = new List<Pessoas>();
+            string[] VetorInformacoes;
+            foreach (var linha in Pessoas.ListaPessoasCSV)
+            {
+                VetorInformacoes = linha.Split(';');
+                if (VetorInformacoes[3].Equals("Desempregado"))
+                {
+                    ListaPessoasObjeto.Add(new Pessoas(VetorInformacoes[0], int.Parse(VetorInformacoes[1]), VetorInformacoes[2]));
+                }
+                else if (!VetorInformacoes[3].Equals("Desempregado"))
+                {
+                    ListaPessoasObjeto.Add(new Funcionario(VetorInformacoes[0], int.Parse(VetorInformacoes[1]), VetorInformacoes[2], double.Parse(VetorInformacoes[3])));
+                }
+            }
+            var retorno = ListaPessoasObjeto.Where(p => p.Nome.ToString().Contains(parametroFiltro)
+                                                     || p.Idade.ToString().Contains(parametroFiltro)
+                                                     || p.Cpf.ToString().Contains(parametroFiltro)
+                                                     || $"{(p as Funcionario)?.Salario}".Contains(parametroFiltro));
+            foreach (var linha in retorno)
+            {
+                ListaFiltrada.Add(linha.ToString());
+            }
+            return ListaFiltrada;
+        }
+        #endregion
     }
 }

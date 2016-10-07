@@ -71,7 +71,7 @@ namespace CasatroFuncionarios
                 foreach (var pessoa in Pessoas.ListaPessoas)
                     ListViewForm1.Items.Add(pessoa);
             }
-            catch
+            catch (FormatoDeArquivoInvalidoException)
             {
                 MessageBox.Show("Formato de Arquivo Invalido","ERRO",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
