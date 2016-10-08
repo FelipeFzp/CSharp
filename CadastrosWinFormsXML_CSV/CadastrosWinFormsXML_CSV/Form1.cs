@@ -79,7 +79,6 @@ namespace CasatroFuncionarios
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void FiltrarInformacoes(object sender, EventArgs e)
@@ -88,6 +87,13 @@ namespace CasatroFuncionarios
             List<string> ListaFiltrada = Utilidades.FiltrarListView(FiltroInformacoes_Textbox.Text);
             foreach (var linha in ListaFiltrada)
                 ListViewForm1.Items.Add(linha.ToString());
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var itemsADeletar = ListViewForm1.CheckedItems;
+            
+            Utilidades.deletarItem(itemsADeletar);
         }
     }
 }

@@ -48,18 +48,20 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.FiltroInformacoes_Textbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // CampoNome
             // 
-            this.CampoNome.Location = new System.Drawing.Point(24, 28);
+            this.CampoNome.Location = new System.Drawing.Point(24, 47);
             this.CampoNome.Name = "CampoNome";
             this.CampoNome.Size = new System.Drawing.Size(100, 20);
             this.CampoNome.TabIndex = 0;
             // 
             // CampCpfMasked
             // 
-            this.CampCpfMasked.Location = new System.Drawing.Point(24, 129);
+            this.CampCpfMasked.Location = new System.Drawing.Point(24, 146);
             this.CampCpfMasked.Mask = "000.000.000-00";
             this.CampCpfMasked.Name = "CampCpfMasked";
             this.CampCpfMasked.Size = new System.Drawing.Size(100, 20);
@@ -67,7 +69,7 @@
             // 
             // CampoIdadeMasked
             // 
-            this.CampoIdadeMasked.Location = new System.Drawing.Point(24, 80);
+            this.CampoIdadeMasked.Location = new System.Drawing.Point(24, 94);
             this.CampoIdadeMasked.Mask = "000";
             this.CampoIdadeMasked.Name = "CampoIdadeMasked";
             this.CampoIdadeMasked.Size = new System.Drawing.Size(100, 20);
@@ -76,7 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 12);
+            this.label1.Location = new System.Drawing.Point(21, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 4;
@@ -85,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 64);
+            this.label2.Location = new System.Drawing.Point(21, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 5;
@@ -94,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 113);
+            this.label3.Location = new System.Drawing.Point(21, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 13);
             this.label3.TabIndex = 6;
@@ -103,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 163);
+            this.label4.Location = new System.Drawing.Point(21, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 9;
@@ -111,7 +113,7 @@
             // 
             // AdicionarButton_Click
             // 
-            this.AdicionarButton_Click.Location = new System.Drawing.Point(24, 214);
+            this.AdicionarButton_Click.Location = new System.Drawing.Point(24, 247);
             this.AdicionarButton_Click.Name = "AdicionarButton_Click";
             this.AdicionarButton_Click.Size = new System.Drawing.Size(75, 23);
             this.AdicionarButton_Click.TabIndex = 4;
@@ -121,7 +123,7 @@
             // 
             // CampoSalarioMasked
             // 
-            this.CampoSalarioMasked.Location = new System.Drawing.Point(24, 179);
+            this.CampoSalarioMasked.Location = new System.Drawing.Point(24, 203);
             this.CampoSalarioMasked.Mask = "00000";
             this.CampoSalarioMasked.Name = "CampoSalarioMasked";
             this.CampoSalarioMasked.Size = new System.Drawing.Size(100, 20);
@@ -130,16 +132,17 @@
             // 
             // ListViewForm1
             // 
-            this.ListViewForm1.Location = new System.Drawing.Point(148, 64);
+            this.ListViewForm1.CheckBoxes = true;
+            this.ListViewForm1.Location = new System.Drawing.Point(174, 49);
             this.ListViewForm1.Name = "ListViewForm1";
-            this.ListViewForm1.Size = new System.Drawing.Size(449, 209);
+            this.ListViewForm1.Size = new System.Drawing.Size(387, 174);
             this.ListViewForm1.TabIndex = 10;
             this.ListViewForm1.UseCompatibleStateImageBehavior = false;
             this.ListViewForm1.View = System.Windows.Forms.View.List;
             // 
             // SalvarComo
             // 
-            this.SalvarComo.Location = new System.Drawing.Point(240, 28);
+            this.SalvarComo.Location = new System.Drawing.Point(477, 247);
             this.SalvarComo.Name = "SalvarComo";
             this.SalvarComo.Size = new System.Drawing.Size(84, 23);
             this.SalvarComo.TabIndex = 6;
@@ -151,7 +154,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(12, 28);
+            this.label5.Location = new System.Drawing.Point(12, 34);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(11, 13);
             this.label5.TabIndex = 11;
@@ -161,7 +164,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(12, 80);
+            this.label6.Location = new System.Drawing.Point(12, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(11, 13);
             this.label6.TabIndex = 12;
@@ -171,7 +174,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(12, 126);
+            this.label7.Location = new System.Drawing.Point(12, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(11, 13);
             this.label7.TabIndex = 13;
@@ -181,7 +184,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(12, 257);
+            this.label8.Location = new System.Drawing.Point(13, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 13);
             this.label8.TabIndex = 14;
@@ -189,7 +192,7 @@
             // 
             // CarregarArquivos
             // 
-            this.CarregarArquivos.Location = new System.Drawing.Point(148, 28);
+            this.CarregarArquivos.Location = new System.Drawing.Point(380, 247);
             this.CarregarArquivos.Name = "CarregarArquivos";
             this.CarregarArquivos.Size = new System.Drawing.Size(75, 23);
             this.CarregarArquivos.TabIndex = 15;
@@ -199,7 +202,7 @@
             // 
             // FiltroInformacoes_Textbox
             // 
-            this.FiltroInformacoes_Textbox.Location = new System.Drawing.Point(497, 31);
+            this.FiltroInformacoes_Textbox.Location = new System.Drawing.Point(461, 23);
             this.FiltroInformacoes_Textbox.Name = "FiltroInformacoes_Textbox";
             this.FiltroInformacoes_Textbox.Size = new System.Drawing.Size(100, 20);
             this.FiltroInformacoes_Textbox.TabIndex = 16;
@@ -208,17 +211,38 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(438, 34);
+            this.label9.Location = new System.Drawing.Point(402, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Filtrar por:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(195, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 21);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Deletar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(174, 26);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 287);
+            this.ClientSize = new System.Drawing.Size(580, 284);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.FiltroInformacoes_Textbox);
             this.Controls.Add(this.CarregarArquivos);
@@ -267,6 +291,8 @@
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox FiltroInformacoes_Textbox;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
