@@ -88,12 +88,5 @@ namespace CasatroFuncionarios
             foreach (var linha in ListaFiltrada)
                 ListViewForm1.Items.Add(linha.ToString());
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            var itemsADeletar = ListViewForm1.CheckedItems;
-            
-            Utilidades.deletarItem(itemsADeletar);
-        }
     }
 }

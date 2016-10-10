@@ -48,8 +48,6 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.FiltroInformacoes_Textbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // CampoNome
@@ -113,7 +111,7 @@
             // 
             // AdicionarButton_Click
             // 
-            this.AdicionarButton_Click.Location = new System.Drawing.Point(24, 247);
+            this.AdicionarButton_Click.Location = new System.Drawing.Point(174, 242);
             this.AdicionarButton_Click.Name = "AdicionarButton_Click";
             this.AdicionarButton_Click.Size = new System.Drawing.Size(75, 23);
             this.AdicionarButton_Click.TabIndex = 4;
@@ -142,7 +140,7 @@
             // 
             // SalvarComo
             // 
-            this.SalvarComo.Location = new System.Drawing.Point(477, 247);
+            this.SalvarComo.Location = new System.Drawing.Point(477, 242);
             this.SalvarComo.Name = "SalvarComo";
             this.SalvarComo.Size = new System.Drawing.Size(84, 23);
             this.SalvarComo.TabIndex = 6;
@@ -184,7 +182,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(13, 13);
+            this.label8.Location = new System.Drawing.Point(13, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 13);
             this.label8.TabIndex = 14;
@@ -192,7 +190,7 @@
             // 
             // CarregarArquivos
             // 
-            this.CarregarArquivos.Location = new System.Drawing.Point(380, 247);
+            this.CarregarArquivos.Location = new System.Drawing.Point(174, 18);
             this.CarregarArquivos.Name = "CarregarArquivos";
             this.CarregarArquivos.Size = new System.Drawing.Size(75, 23);
             this.CarregarArquivos.TabIndex = 15;
@@ -217,32 +215,11 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Filtrar por:";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(195, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 21);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Deletar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(174, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 19;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 284);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(580, 277);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.FiltroInformacoes_Textbox);
             this.Controls.Add(this.CarregarArquivos);
@@ -291,8 +268,6 @@
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox FiltroInformacoes_Textbox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
